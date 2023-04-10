@@ -1,0 +1,5 @@
+repositories:
+  krytn_cafe:
+    type: git
+    url: git@github.com:johnny555/krytn_cafe.git
+    version: main
