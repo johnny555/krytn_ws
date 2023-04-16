@@ -203,6 +203,12 @@
             "type": "shell",
             "command": "./setup.sh",
             "problemMatcher": []
+        },
+        {
+            "label": "run robot steering",
+            "detail": "run the rqt_robot_steering script",
+            "type": "shell",
+            "command": "ros2 run rqt_robot_steering rqt_robot_steering"
         }
     ],
     "inputs": [
