@@ -2,13 +2,14 @@ version: '3'
 services:
   foxy-desktop-full:
     image: johnny555/krytn:v1
-    volumes: 
+    user: ros
+    volumes:
       - ../:/workspace:cached
       - /tmp/.X11-unix:/tmp/.X11-unix
       - /mnt/wslg:/mnt/wslg
       - /usr/lib/wsl:/usr/lib/wsl
-      
-    devices: 
+
+    devices:
       - /dev/dxg:/dev/dxg
 
     deploy:
@@ -17,12 +18,13 @@ services:
           devices:
             - driver: nvidia
               count: 1
-              capabilities: [gpu]
-    
-    environment: 
+              capabilities: [ gpu ]
+
+    environment:
       - DISPLAY=:0
       - WAYLAND_DISPLAY
       - XDG_RUNTIME_DIR
       - PULSE_SERVER
-    
+      - LIBGL_ALWAYS_SOFTWARE=1
+
     command: /bin/sh -c "while sleep 1000; do :; done"

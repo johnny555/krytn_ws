@@ -11,3 +11,8 @@ cd ..
 source /opt/ros/foxy/local_setup.bash
 rosdep update
 rosdep install --from-paths src --ignore-src -y -r
+
+# Create user ros, and allow it to install stuff. 
+adduser --disabled-password --gecos "docker user" ros
+echo 'ros ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/ros && chmod 0440 /etc/sudoers.d/ros
+chown -R ros /workspace
