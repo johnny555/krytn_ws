@@ -1,6 +1,15 @@
 {
+    "editor.tabSize": 8,
+    "editor.rulers": [
+        100
+    ],
+    "files.associations": {
+        "*.repos": "yaml",
+        "*.world": "xml",
+        "*.xacro": "xml"
+    },
     "ros.distro": "foxy",
-    "ros.rosSetupScript": "",
+    "ros.rosSetupScript": "/workspace/install/setup.bash",
     "python.autoComplete.extraPaths": [
         "/workspace/install/krytn_cafe/lib/python3.8/site-packages",
         "/opt/ros/foxy/lib/python3.8/site-packages"
@@ -8,5 +17,47 @@
     "python.analysis.extraPaths": [
         "/workspace/install/krytn_cafe/lib/python3.8/site-packages",
         "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    // Environment file lets vscode find python files within workspace
+    "python.envFile": "${workspaceFolder}/.env",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/build": true,
+        "**/install": true,
+        "**/log": true
+    },
+    "cSpell.words": [
+        "RTPS",
+        "athackst",
+        "autopep",
+        "cmake",
+        "cppcheck",
+        "cpplint",
+        "DCMAKE",
+        "deque",
+        "devcontainer",
+        "ints",
+        "noqa",
+        "pytest",
+        "rclcpp",
+        "rclpy",
+        "repos",
+        "rosdep",
+        "rosdistro",
+        "rosidl",
+        "RTPS",
+        "uncrustify",
+        "Wextra",
+        "Wpedantic",
+        "xmllint"
+    ],
+    "cSpell.allowCompoundWords": true,
+    "cSpell.ignorePaths": [
+        "**/vscode-extension/**",
+        "**/.git/objects/**",
+        ".vscode",
+        ".devcontainer/*"
     ]
 }

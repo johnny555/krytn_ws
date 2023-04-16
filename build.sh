@@ -1,6 +1,5 @@
 #!/bin/bash
 # from: https://github.com/athackst/vscode_ros2_workspace/blob/humble/build.sh
-set -e
 
 # Set the default build type
 BUILD_TYPE=RelWithDebInfo
