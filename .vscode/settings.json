@@ -52,7 +52,8 @@
         "Wextra",
         "Wpedantic",
         "xmllint",
-        "krytn"
+        "krytn",
+        "xacro"
     ],
     "cSpell.allowCompoundWords": true,
     "cSpell.ignorePaths": [
