@@ -22,3 +22,8 @@ This is the base repo designed to be cloned to setup a VS code enviroment for de
 `ros2 launch krytn-cafe empty-world.launch.py`
 
 And you are away! 
+
+
+## References
+
+Using some setup inspiration and code snippets from the excellent https://github.com/athackst/vscode_ros2_workspace

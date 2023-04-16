@@ -16,3 +16,7 @@ rosdep install --from-paths src --ignore-src -y -r
 adduser --disabled-password --gecos "docker user" ros
 echo 'ros ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/ros && chmod 0440 /etc/sudoers.d/ros
 chown -R ros /workspace
+
+# Make it so that sourcing happens automatically
+echo "source /opt/ros/foxy/setup.bash" >> /home/ros/.bashrc
+echo "source /workspace/install/setup.bash" >> /home/ros/.bashrc

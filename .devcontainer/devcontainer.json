@@ -40,7 +40,7 @@
 						"path": "/bin/bash",
 						"args": [
 							"-c",
-							"source /opt/ros/foxy/setup.bash && exec bash"
+							"source /opt/ros/foxy/setup.bash; source /workspace/install/setup.bash; exec bash"
 						]
 					}
 				},

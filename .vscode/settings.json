@@ -1,0 +1,12 @@
+{
+    "ros.distro": "foxy",
+    "ros.rosSetupScript": "",
+    "python.autoComplete.extraPaths": [
+        "/workspace/install/krytn_cafe/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/workspace/install/krytn_cafe/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}
