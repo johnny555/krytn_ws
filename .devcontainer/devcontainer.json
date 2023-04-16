@@ -46,9 +46,6 @@
 				"C_Cpp.clang_format_path": "clang-format",
 				"C_Cpp.clang_format_fallbackStyle": "Google",
 				"C_Cpp.formatting": "default",
-				"[python]": {
-					"editor.defaultFormatter": "ms-python.python"
-				},
 				"ros.distro": "foxy",
 				"ros.packagePath": "/opt/ros/foxy/share/"
 			}
